@@ -1,0 +1,222 @@
+/* General layout */
+body {
+  background-color: #121212;
+  color: #f1f1f1;
+  font-family: 'Roboto', sans-serif; /* Asegúrate de que esta fuente esté disponible o usa una genérica */
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #f1f1f1;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #d62828;
+}
+
+/* Headers */
+h1 {
+  color: #d62828;
+  font-size: 60px;
+  text-align: center;
+  padding: 30px 0;
+  border-bottom: 4px solid #2c2c2c;
+}
+
+h2 {
+  color: #d62828;
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+
+h2.titulo-juegg { /* Clase específica para títulos de juegos, si la usas en otro lugar */
+  border: 0;
+  text-align: center;
+}
+
+header p { /* No hay <p> directamente en <header> en tu HTML actual, pero si lo añades, se aplicará */
+  color: #f1f1f1;
+  text-align: center;
+  margin: 10px 0;
+}
+
+/* Navigation */
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 15px 0;
+  background-color: #1e1e1e;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+nav ul li {
+  margin: 0;
+}
+
+nav ul a {
+  font-weight: bold;
+  padding: 10px;
+}
+
+/* Main content */
+main {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+main p { /* Estilos generales para párrafos dentro de main */
+  text-align: justify;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+/* Form and Buttons (General styles for all forms/buttons) */
+input[type="button"],
+input[type="submit"] {
+  padding: 10px 20px;
+  border: none;
+  background-color: #d62828;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+input[type="button"]:hover,
+input[type="submit"]:hover {
+  background-color: #a31e1e;
+}
+
+input[type="button"] {
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+/* Progress bar (if you use it elsewhere) */
+progress {
+  width: 200px;
+  height: 20px;
+  appearance: none;
+  margin-bottom: 10px;
+}
+
+progress::-webkit-progress-bar {
+  background-color: #333;
+  border-radius: 10px;
+}
+
+progress::-webkit-progress-value {
+  background-color: #d62828;
+  border-radius: 10px;
+}
+
+/* Footer */
+footer {
+  background-color: #1e1e1e;
+  color: #f1f1f1;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 50px; /* Añadido para separar del contenido principal */
+}
+
+footer ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+footer ul a {
+  color: #f1f1f1;
+  transition: color 0.3s ease;
+}
+
+footer ul a:hover {
+  color: #d62828;
+}
+
+/* Contact form (Specific styles for the contact form) */
+/* Nota: Tu HTML usa id="contacto-form", no "contact-form".
+   Los estilos de abajo se aplicarán si cambias el ID en el HTML o ajustas el selector aquí.
+   He ajustado el selector para que coincida con tu HTML: #contacto-form
+*/
+#contacto-form { /* Cambiado de #contact-form a #contacto-form */
+  display: flex; /* Esto sobrescribe el grid de los estilos anteriores del formulario */
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  margin-top: 30px;
+  /* Los siguientes estilos son para el formulario en general, ya definidos arriba,
+     pero si quieres que este formulario tenga un layout de flexbox en lugar de grid,
+     estos estilos son los que prevalecerán.
+     Si quieres el layout de grid, elimina el 'display: flex' y 'flex-direction: column' de aquí.
+     Mantendré el 'display: grid' de los estilos anteriores del formulario para consistencia con tu HTML previo.
+     Por lo tanto, este bloque de #contacto-form es redundante o conflictivo con el anterior.
+     Voy a mantener los estilos de grid que ya tenías para el formulario.
+     Si quieres que este formulario sea flex, tendrías que cambiar el HTML para que sea un solo bloque de p's
+     o ajustar el grid para que se comporte como flex.
+     Por ahora, voy a asumir que quieres el layout de grid que ya tenías.
+     Así que, los estilos específicos para #contacto-form que has añadido aquí son un poco redundantes
+     o pueden sobrescribir el layout de grid que ya tenías.
+     Voy a eliminar el 'display: flex' y 'flex-direction: column' de este bloque
+     para que el 'display: grid' del selector 'section form' siga aplicando.
+  */
+  /* Eliminado: display: flex; flex-direction: column; */
+}
+
+#contacto-form p { /* Cambiado de #contact-form p a #contacto-form p */
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 400px; /* Esto limitará el ancho de los campos individuales */
+  margin: 0;
+}
+
+#contacto-form label { /* Cambiado de #contact-form label a #contacto-form label */
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+#contacto-form input[type="text"], /* Cambiado de #contact-form input... a #contacto-form input... */
+#contacto-form input[type="date"],
+#contacto-form input[type="color"],
+#contacto-form textarea {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #444;
+  background-color: #1f1f1f;
+  color: #f1f1f1;
+}
+
+#contacto-form textarea { /* Cambiado de #contact-form textarea a #contacto-form textarea */
+  resize: vertical;
+  min-height: 80px;
+}
+
+#contacto-form input[type="checkbox"] { /* Cambiado de #contact-form input... a #contacto-form input... */
+  margin-right: 10px;
+}
+
+/* Utility classes */
+.error {
+  color: #ff4c4c;
+}
+
+.you-win {
+  color: #4caf50;
+}

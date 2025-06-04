@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Marc Peña</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #d62828;
+      color: white;
+      padding: 40px 20px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 48px;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 18px;
+    }
+
+    nav ul {
+      display: flex;
+      justify-content: center;
+      list-style: none;
+      padding: 20px 0;
+      background-color: #b71c1c;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #ffe5e5;
+    }
+
+    main {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h2, h3 {
+      color: #d62828;
+      border-bottom: 2px solid #d62828;
+      padding-bottom: 8px;
+      margin-bottom: 20px;
+    }
+
+    section {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      padding: 20px;
+      margin-bottom: 30px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 20px;
+    }
+
+    section img {
+      width: 250px;
+      border-radius: 10px;
+    }
+
+    section p {
+      flex: 1;
+      text-align: justify;
+    }
+
+    form {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    input[type="email"] {
+      padding: 10px;
+      width: 300px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    button {
+      padding: 10px 20px;
+      border: none;
+      background-color: #d62828;
+      color: white;
+      font-weight: bold;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    button:hover {
+      background-color: #a31e1e;
+    }
+
+    footer {
+      background-color: #2b2b2b;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    footer nav ul {
+      display: flex;
+      justify-content: center;
+      list-style: none;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin-bottom: 10px;
+    }
+
+    footer nav ul li a {
+      color: white;
+      text-decoration: none;
+    }
+
+    footer nav ul li a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 768px) {
+      section {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      section p {
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Marc Peña</h1>
+    <p>Alumno de ENTI ASIX-Cyberseguridad</p>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="cv.html">CV</a></li>
+      <li><a href="hobbies.html">Hobbies</a></li>
+      <li><a href="microjuegos.html">Microjuegos</a></li>
+      <li><a href="contacto.html">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <h2>Sobre mí</h2>
+    <section>
+      <p>
+        Em dic Marc Peña i actualment estic cursant el cicle formatiu de Grau Superior d’Administració de Sistemes Informàtics en Xarxa (ASIX), 
+		amb especialització en ciberseguretat. Tinc una forta motivació per aprendre i superar reptes, 
+		ja que considero que la tecnologia evoluciona constantment i és essencial estar en formació contínua.
+      </p>
+      <img src="marc.jpg" alt="Marc Peña">
+    </section>
+
+    <h3>Para mas informacion</h3>
+    <section>
+      <form action="#">
+        <input type="email" placeholder="Tu correo electrónico" required>
+        <button type="submit">Solicitar</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="cv.html">CV</a></li>
+        <li><a href="hobbies.html">Hobbies</a></li>
+        <li><a href="microjuegos.html">Microjuegos</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+    <p>&copy; Marc Peña</p>
+  </footer>
+
+</body>
+</html>

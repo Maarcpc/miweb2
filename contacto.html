@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Contacto</title>
+  <link rel="stylesheet" href="estilos.css">
+  <script src="formulario.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <h1>Contacto</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="cv.html">CV</a></li>
+        <li><a href="hobbies.html">Hobbies</a></li>
+        <li><a href="microjuegos.html">Microjuegos</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Formulario</h2>
+      <form id="contacto-form">
+        <p>
+          <label for="name-field">Nombre:</label>
+          <input type="text" name="name" id="name-field" placeholder="Pon tu nombre completo" required />
+        </p>
+
+        <p>
+          <label for="birthday-field">Fecha de nacimiento:</label>
+          <input type="date" name="birthday" id="birthday-field" required />
+        </p>
+
+        <p class="full-width">
+          <label for="message-field">Mensaje:</label>
+          <textarea name="message" id="message-field" rows="4" placeholder="Escribe tu mensaje aquí" required></textarea>
+        </p>
+
+        <p class="full-width">
+          <input type="submit" value="Enviar" />
+        </p>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="cv.html">CV</a></li>
+        <li><a href="hobbies.html">Hobbies</a></li>
+        <li><a href="microjuegos.html">Microjuegos</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+    <p>&copy; Marc Peña</p>
+  </footer>
+</body>
+</html>

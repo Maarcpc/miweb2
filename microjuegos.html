@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head> 
+  <meta charset="UTF-8" />
+  <title>Microjuegos Marc Peña</title> 
+  <link rel="stylesheet" href="estilos.css">
+  <script src="microjuegos.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Microjuegos</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="cv.html">CV</a></li>
+        <li><a href="hobbies.html">Hobbies</a></li>
+        <li><a href="microjuegos.html">Microjuegos</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Adivina el número</h2>
+    <p>Adivina el número entre <strong>1</strong> y <strong>100</strong>.</p>
+    <p id="resultado">¡Prueba suerte!</p>
+    <p id="intentos-restantes"></p>     <form onsubmit="return false;">
+      <label for="field-number">Tu número:</label>
+      <input type="number" id="field-number" name="number" />
+      <input type="button" id="field-submit" value="Adivina" onclick="compara_numero();" />
+        <input type="button" value="Reiniciar" onclick="reiniciarJuego();" />     </form>
+
+  </main>
+
+  <footer>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="cv.html">CV</a></li>
+        <li><a href="hobbies.html">Hobbies</a></li>
+        <li><a href="microjuegos.html">Microjuegos</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+    <p>&copy; Marc Peña</p>
+  </footer>
+</body>
+</html>
